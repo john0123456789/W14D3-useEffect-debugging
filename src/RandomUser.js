@@ -8,7 +8,7 @@ const RandomUserTwo = () => {
   const [num, setNum] = useState(0);
   const [searchChange, setSearchChange] = useState("");
   const [searchWord, setSearchWord] = useState(
-    localStorage.setItem("user", num) || "foobar"
+    localStorage.getItem("user") || "foobar"
   );
 
   const [data, setData] = useState([]);
